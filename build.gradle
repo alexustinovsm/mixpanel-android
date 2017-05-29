@@ -16,7 +16,7 @@ version = VERSION_NAME
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '24.0.3'
+    buildToolsVersion '25.0.0'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -61,4 +61,4 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.14.1'
 }
 
-apply from: rootProject.file('maven.gradle')
+//apply from: rootProject.file('maven.gradle')

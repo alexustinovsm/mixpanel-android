@@ -34,7 +34,9 @@ import java.text.DecimalFormat;
 
     @Override
     public void onActivityStarted(Activity activity) {
-        if (activity.getIntent().hasExtra("mp_campaign_id") && activity.getIntent().hasExtra("mp_message_id")) {
+        if (activity != null && activity.getIntent() != null &&
+                activity.getIntent().hasExtra("mp_campaign_id") &&
+                activity.getIntent().hasExtra("mp_message_id")) {
             String campaignId = activity.getIntent().getStringExtra("mp_campaign_id");
             String messageId = activity.getIntent().getStringExtra("mp_message_id");
 
